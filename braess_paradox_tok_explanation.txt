@@ -1,0 +1,56 @@
+BRAESS'S PARADOX — RESULTS AND TOK CONNECTION
+================================================
+
+What the model represents
+-------------------------
+This simplified model represents 4,000 drivers travelling from
+Start to End. A congested road takes traffic_flow / 100
+minutes, each fixed-time road takes 45 minutes, and the
+shortcut takes 0 minutes.
+
+Numerical results
+-----------------
+SCENARIO A — WITHOUT THE SHORTCUT
+- 2,000 drivers use the upper route.
+- 2,000 drivers use the lower route.
+- Upper route time: 65.0 minutes.
+- Lower route time: 65.0 minutes.
+- Average journey time: 65.0 minutes.
+
+SCENARIO B — WITH THE SHORTCUT
+- At the model's selfish-route-choice equilibrium, all 4,000
+  drivers use Start -> Upper -> Lower -> End.
+- The first congested road takes 40.0 minutes.
+- The shortcut takes 0 minutes.
+- The second congested road takes 40.0 minutes.
+- Total journey time: 80.0 minutes.
+- The upper-only and lower-only alternatives each take
+  85.0 and 85.0 minutes respectively.
+- Average journey time: 80.0 minutes.
+
+COMPARISON
+----------
+Adding the shortcut increases the modelled average journey time from
+65.0 to 80.0 minutes: an increase of
+15.0 minutes per driver (about 23.1%).
+
+Why this matters for a TOK essay
+--------------------------------
+The result challenges the intuitive claim that adding a road must improve
+traffic. It shows what follows from a specific mathematical model and its
+assumptions. The Python program makes the result observable and repeatable,
+but the output is not independent proof that every real road network will
+behave this way.
+
+Limitations and evaluation
+--------------------------
+1. The model assumes drivers choose routes to minimize their own journey time.
+2. It uses simplified road-time functions and a zero-time shortcut.
+3. It assumes the traffic pattern reaches equilibrium.
+4. Real drivers, road layouts, traffic signals, incidents, and changing demand
+   can make actual traffic behave differently.
+
+TOK interpretation:
+Mathematics establishes the result within the model; applying that result to
+the real world requires checking whether the assumptions are realistic and
+comparing the model with empirical traffic evidence.
